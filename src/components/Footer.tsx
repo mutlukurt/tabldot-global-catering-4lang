@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-sm">
-            © {currentYear} Tabldot. {t.footer.rights}
+            © {currentYear} Tabldot. MIT License - Mutlu Kurt
           </p>
         </div>
       </div>
