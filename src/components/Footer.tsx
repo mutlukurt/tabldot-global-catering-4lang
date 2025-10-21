@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-sm">
-            © {currentYear} Mutlu Kurt - Under MIT License
+            © {currentYear} Mutlu Kurt - Licensed Under the MIT License
           </p>
         </div>
       </div>
