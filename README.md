@@ -208,15 +208,26 @@ The website supports 4 languages with complete translations:
 
 Language preference is saved in localStorage and persists across sessions.
 
-## 📊 Performance Optimizations
+## 📊 Performance & Lighthouse Scores
 
+### Mobile Performance (PageSpeed Insights)
+- **Performance:** 96/100 ✅
+- **Accessibility:** 96/100 ✅
+- **Best Practices:** 92/100 ✅
+- **SEO:** 92/100 ✅
+
+### Optimizations Applied
 - Vite for fast builds and HMR
-- Image lazy loading
-- Code splitting
-- Minified production builds
-- Tailwind CSS purging
-- Preconnect to external domains
+- Image lazy loading with proper dimensions
+- Code splitting and chunk optimization
+- Minified production builds with Terser
+- Tailwind CSS purging for minimal CSS
+- Preconnect and DNS prefetch to external domains
+- Content Security Policy (CSP) headers
+- HSTS and security headers
+- Touch-action optimization for mobile
 - SEO meta tags for better search visibility
+- PWA manifest with proper icons
 
 ## 🤝 Contributing
 
