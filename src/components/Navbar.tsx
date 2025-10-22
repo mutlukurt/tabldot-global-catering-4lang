@@ -52,7 +52,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             <span className="text-2xl font-bold text-gray-900">Tabldot</span>
           </button>
 
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -100,7 +100,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             </div>
           </div>
 
-          <div className="md:hidden flex items-center space-x-4">
+          <div className="lg:hidden flex items-center space-x-4">
             <button
               onClick={() => setIsLangOpen(!isLangOpen)}
               className="text-gray-700 hover:text-orange-600 transition-colors"
@@ -123,7 +123,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white">
+        <div className="lg:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <button
@@ -143,7 +143,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
       )}
 
       {isLangOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white">
+        <div className="lg:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 grid grid-cols-2 gap-2">
             {languages.map((lang) => (
               <button
