@@ -3,14 +3,20 @@
   "short_name": "Tabldot",
   "description": "Professional catering services for every occasion",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#ffffff",
   "theme_color": "#ea580c",
   "icons": [
     {
       "src": "/vite.svg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "categories": ["food", "business"],
+  "lang": "en",
+  "dir": "ltr"
 }
