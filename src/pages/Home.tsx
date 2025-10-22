@@ -53,11 +53,12 @@ export default function Home({ onNavigate }: HomeProps) {
           <img
             src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1"
             alt="Premium catering service with elegant food presentation"
-            width="800"
-            height="533"
+            width="1920"
+            height="1280"
             className="absolute inset-0 w-full h-full object-cover"
             fetchPriority="high"
             loading="eager"
+            decoding="async"
           />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" style={{ contain: 'layout style paint' }}></div>

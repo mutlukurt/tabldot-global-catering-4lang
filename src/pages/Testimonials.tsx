@@ -32,9 +32,7 @@ export default function Testimonials() {
       if (error) throw error;
       setTestimonials(data || []);
     } catch (error) {
-      if (import.meta.env.DEV) {
-        console.error('Error fetching testimonials:', error);
-      }
+      setTestimonials([]);
     } finally {
       setLoading(false);
     }
