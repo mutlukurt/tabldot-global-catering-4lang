@@ -45,20 +45,20 @@ export default function Home({ onNavigate }: HomeProps) {
         aria-label="Hero section"
       >
         <img
-          src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
-          srcSet="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1 640w, https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1 800w, https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1200&dpr=1 1200w"
-          sizes="100vw"
+          src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1"
+          srcSet="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1 640w, https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1 800w"
+          sizes="(max-width: 640px) 640px, 800px"
           alt="Premium catering service with elegant food presentation"
-          width="1200"
-          height="800"
+          width="800"
+          height="533"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"
-          decoding="async"
+          decoding="sync"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" style={{ contain: 'layout style paint' }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ contain: 'layout' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in" style={{ contain: 'layout' }}>
             {t.home.hero.title}
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in-delay">
