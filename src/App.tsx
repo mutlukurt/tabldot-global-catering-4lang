@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { LanguageProvider } from './i18n/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Services from './pages/Services';
-import Order from './pages/Order';
-import Testimonials from './pages/Testimonials';
-import Health from './pages/Health';
-import About from './pages/About';
+
+const Services = lazy(() => import('./pages/Services'));
+const Order = lazy(() => import('./pages/Order'));
+const Testimonials = lazy(() => import('./pages/Testimonials'));
+const Health = lazy(() => import('./pages/Health'));
+const About = lazy(() => import('./pages/About'));
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -21,15 +22,35 @@ function App() {
       case 'home':
         return <Home onNavigate={setCurrentPage} />;
       case 'services':
-        return <Services />;
+        return (
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600"></div></div>}>
+            <Services />
+          </Suspense>
+        );
       case 'order':
-        return <Order />;
+        return (
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600"></div></div>}>
+            <Order />
+          </Suspense>
+        );
       case 'testimonials':
-        return <Testimonials />;
+        return (
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600"></div></div>}>
+            <Testimonials />
+          </Suspense>
+        );
       case 'health':
-        return <Health />;
+        return (
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600"></div></div>}>
+            <Health />
+          </Suspense>
+        );
       case 'about':
-        return <About />;
+        return (
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600"></div></div>}>
+            <About />
+          </Suspense>
+        );
       default:
         return <Home onNavigate={setCurrentPage} />;
     }
