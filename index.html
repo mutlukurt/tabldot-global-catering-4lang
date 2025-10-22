@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/vite.svg" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <style>
       #root{min-height:100vh;background:#fff}
@@ -34,10 +35,12 @@
     <meta name="theme-color" content="#ea580c" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Tabldot" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://tabldot.com/" />
+    <meta name="color-scheme" content="light" />
   </head>
   <body>
     <noscript>
@@ -47,6 +50,6 @@
       </div>
     </noscript>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" crossorigin></script>
   </body>
 </html>

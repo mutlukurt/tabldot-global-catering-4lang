@@ -48,7 +48,9 @@ export default function Home({ onNavigate }: HomeProps) {
           src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
           srcSet="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1 640w, https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1 800w, https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1200&dpr=1 1200w"
           sizes="100vw"
-          alt="Hero background"
+          alt="Premium catering service with elegant food presentation"
+          width="1200"
+          height="800"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"
           decoding="async"
@@ -115,7 +117,9 @@ export default function Home({ onNavigate }: HomeProps) {
       >
         <img
           src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
-          alt="Statistics background"
+          alt="Catering service statistics background with food display"
+          width="1200"
+          height="600"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
           decoding="async"
@@ -141,7 +145,9 @@ export default function Home({ onNavigate }: HomeProps) {
       >
         <img
           src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
-          alt="About background"
+          alt="About Tabldot catering service with professional kitchen"
+          width="1200"
+          height="600"
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
           decoding="async"

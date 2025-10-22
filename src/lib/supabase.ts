@@ -10,6 +10,13 @@ export const supabase = createClient(
     auth: {
       persistSession: true,
       autoRefreshToken: true,
+      detectSessionInUrl: true,
+      flowType: 'pkce',
+    },
+    global: {
+      headers: {
+        'x-application-name': 'tabldot-catering',
+      },
     },
   }
 );
