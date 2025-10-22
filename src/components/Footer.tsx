@@ -21,11 +21,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-500" aria-hidden="true" />
-                <span className="text-sm">info@tabldot.com</span>
+                <a href="mailto:info@tabldot.com" className="text-sm hover:text-orange-500 transition-colors">
+                  info@tabldot.com
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-500" aria-hidden="true" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <a href="tel:+15551234567" className="text-sm hover:text-orange-500 transition-colors">
+                  +1 (555) 123-4567
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-orange-500" aria-hidden="true" />
@@ -38,30 +42,38 @@ export default function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">{t.footer.followUs}</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
-                aria-label="Facebook"
+                aria-label="Visit our Facebook page"
               >
                 <Facebook className="h-6 w-6" aria-hidden="true" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
-                aria-label="Instagram"
+                aria-label="Visit our Instagram page"
               >
                 <Instagram className="h-6 w-6" aria-hidden="true" />
               </a>
               <a
-                href="#"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Visit our LinkedIn page"
               >
                 <Linkedin className="h-6 w-6" aria-hidden="true" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
-                aria-label="Twitter"
+                aria-label="Visit our Twitter page"
               >
                 <Twitter className="h-6 w-6" aria-hidden="true" />
               </a>
