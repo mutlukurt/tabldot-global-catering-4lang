@@ -1,0 +1,16 @@
+{
+  "name": "Tabldot - Premium Catering Solutions",
+  "short_name": "Tabldot",
+  "description": "Professional catering services for every occasion",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
