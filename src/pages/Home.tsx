@@ -41,13 +41,13 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen">
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center"
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-gray-900"
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
         }}
         aria-label="Hero section"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" style={{ willChange: 'transform' }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
@@ -104,13 +104,13 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       <section
-        className="py-20 bg-cover bg-center relative"
+        className="py-20 bg-cover bg-center relative bg-orange-900"
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
         }}
         aria-label="Statistics section"
       >
-        <div className="absolute inset-0 bg-orange-900/90"></div>
+        <div className="absolute inset-0 bg-orange-900/90" style={{ willChange: 'transform' }}></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -126,13 +126,13 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       <section
-        className="py-20 bg-cover bg-center relative"
+        className="py-20 bg-cover bg-center relative bg-gray-900"
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
         }}
         aria-label="About section"
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/60" style={{ willChange: 'transform' }}></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
             {t.about.subtitle}
