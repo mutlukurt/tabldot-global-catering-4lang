@@ -20,15 +20,15 @@ export default function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">{t.footer.contact}</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-orange-500" />
+                <Mail className="h-5 w-5 text-orange-500" aria-hidden="true" />
                 <span className="text-sm">info@tabldot.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-orange-500" />
+                <Phone className="h-5 w-5 text-orange-500" aria-hidden="true" />
                 <span className="text-sm">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-orange-500" />
+                <MapPin className="h-5 w-5 text-orange-500" aria-hidden="true" />
                 <span className="text-sm">123 Culinary Street, Food City</span>
               </div>
             </div>
@@ -42,28 +42,28 @@ export default function Footer() {
                 className="text-gray-400 hover:text-orange-500 transition-colors"
                 aria-label="Facebook"
               >
-                <Facebook className="h-6 w-6" />
+                <Facebook className="h-6 w-6" aria-hidden="true" />
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
                 aria-label="Instagram"
               >
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-6 w-6" aria-hidden="true" />
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-6 w-6" aria-hidden="true" />
               </a>
               <a
                 href="#"
                 className="text-gray-400 hover:text-orange-500 transition-colors"
                 aria-label="Twitter"
               >
-                <Twitter className="h-6 w-6" />
+                <Twitter className="h-6 w-6" aria-hidden="true" />
               </a>
             </div>
           </div>

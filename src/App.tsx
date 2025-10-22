@@ -39,7 +39,7 @@ function App() {
     <LanguageProvider>
       <div className="min-h-screen bg-white">
         <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
-        <main>{renderPage()}</main>
+        <main role="main">{renderPage()}</main>
         <Footer />
       </div>
     </LanguageProvider>

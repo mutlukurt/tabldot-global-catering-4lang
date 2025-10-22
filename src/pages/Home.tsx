@@ -45,6 +45,7 @@ export default function Home({ onNavigate }: HomeProps) {
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920)',
         }}
+        aria-label="Hero section"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
 
@@ -61,7 +62,7 @@ export default function Home({ onNavigate }: HomeProps) {
               className="px-8 py-4 bg-orange-600 text-white rounded-lg font-semibold hover:bg-orange-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg"
             >
               <span>{t.home.hero.cta}</span>
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="h-5 w-5" aria-hidden="true" />
             </button>
             <button
               onClick={() => onNavigate('services')}
@@ -88,7 +89,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-2 duration-300"
               >
                 <div className="bg-orange-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="h-7 w-7 text-orange-600" />
+                  <feature.icon className="h-7 w-7 text-orange-600" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {feature.title}
@@ -107,6 +108,7 @@ export default function Home({ onNavigate }: HomeProps) {
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920)',
         }}
+        aria-label="Statistics section"
       >
         <div className="absolute inset-0 bg-orange-900/90"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -128,6 +130,7 @@ export default function Home({ onNavigate }: HomeProps) {
         style={{
           backgroundImage: 'url(https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1920)',
         }}
+        aria-label="About section"
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

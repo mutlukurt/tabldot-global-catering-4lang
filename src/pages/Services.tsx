@@ -59,7 +59,7 @@ export default function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
                   <div className="bg-orange-600 w-14 h-14 rounded-lg flex items-center justify-center">
-                    <service.icon className="h-7 w-7 text-white" />
+                    <service.icon className="h-7 w-7 text-white" aria-hidden="true" />
                   </div>
                 </div>
               </div>

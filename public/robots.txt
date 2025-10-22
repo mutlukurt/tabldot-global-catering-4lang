@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tabldot.com/sitemap.xml

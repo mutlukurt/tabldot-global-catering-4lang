@@ -43,13 +43,14 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div
+          <button
             className="flex items-center space-x-2 cursor-pointer transition-transform hover:scale-105"
             onClick={() => handleNavClick('home')}
+            aria-label="Go to home page"
           >
-            <ChefHat className="h-8 w-8 text-orange-600" />
+            <ChefHat className="h-8 w-8 text-orange-600" aria-hidden="true" />
             <span className="text-2xl font-bold text-gray-900">Tabldot</span>
-          </div>
+          </button>
 
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
@@ -70,6 +71,9 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-all"
+                aria-label="Change language"
+                aria-expanded={isLangOpen}
+                aria-haspopup="true"
               >
                 <Globe className="h-4 w-4" />
                 <span>{languages.find(l => l.code === language)?.flag}</span>
@@ -100,15 +104,19 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             <button
               onClick={() => setIsLangOpen(!isLangOpen)}
               className="text-gray-700 hover:text-orange-600 transition-colors"
+              aria-label="Change language"
+              aria-expanded={isLangOpen}
             >
-              <Globe className="h-6 w-6" />
+              <Globe className="h-6 w-6" aria-hidden="true" />
             </button>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-orange-600 transition-colors"
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMenuOpen}
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? <X className="h-6 w-6" aria-hidden="true" /> : <Menu className="h-6 w-6" aria-hidden="true" />}
             </button>
           </div>
         </div>

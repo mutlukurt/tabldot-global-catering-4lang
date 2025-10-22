@@ -27,7 +27,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300">
             <div className="bg-gradient-to-br from-orange-500 to-orange-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
-              <Target className="h-8 w-8 text-white" />
+              <Target className="h-8 w-8 text-white" aria-hidden="true" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               {t.nav.about.split(' ')[0]} Mission
@@ -39,7 +39,7 @@ export default function About() {
 
           <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300">
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
-              <Eye className="h-8 w-8 text-white" />
+              <Eye className="h-8 w-8 text-white" aria-hidden="true" />
             </div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               {t.nav.about.split(' ')[0]} Vision
@@ -60,7 +60,7 @@ export default function About() {
           <div className="relative z-10 p-12 sm:p-16 md:p-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="text-center">
-                <Award className="h-16 w-16 text-orange-500 mx-auto mb-4" />
+                <Award className="h-16 w-16 text-orange-500 mx-auto mb-4" aria-hidden="true" />
                 <h3 className="text-3xl font-bold text-white mb-3">
                   {t.home.features.quality.title}
                 </h3>
@@ -70,7 +70,7 @@ export default function About() {
               </div>
 
               <div className="text-center">
-                <Users className="h-16 w-16 text-orange-500 mx-auto mb-4" />
+                <Users className="h-16 w-16 text-orange-500 mx-auto mb-4" aria-hidden="true" />
                 <h3 className="text-3xl font-bold text-white mb-3">
                   {t.home.features.custom.title}
                 </h3>

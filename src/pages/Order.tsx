@@ -91,6 +91,8 @@ export default function Order() {
         <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 md:p-10">
           {message && (
             <div
+              role="alert"
+              aria-live="polite"
               className={`mb-6 p-4 rounded-lg ${
                 message.type === 'success'
                   ? 'bg-green-50 text-green-800 border border-green-200'
@@ -249,7 +251,7 @@ export default function Order() {
               className="w-full bg-orange-600 text-white py-4 rounded-lg font-semibold hover:bg-orange-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-lg"
             >
               <span>{isSubmitting ? t.order.form.submitting : t.order.form.submit}</span>
-              {!isSubmitting && <Send className="h-5 w-5" />}
+              {!isSubmitting && <Send className="h-5 w-5" aria-hidden="true" />}
             </button>
           </form>
         </div>

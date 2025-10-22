@@ -60,7 +60,7 @@ export default function Health() {
               <div className={`h-2 bg-gradient-to-r ${item.color}`}></div>
               <div className="p-8">
                 <div className={`bg-gradient-to-br ${item.color} w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
-                  <item.icon className="h-8 w-8 text-white" />
+                  <item.icon className="h-8 w-8 text-white" aria-hidden="true" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {item.title}

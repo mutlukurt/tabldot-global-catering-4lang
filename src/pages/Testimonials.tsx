@@ -45,6 +45,7 @@ export default function Testimonials() {
         className={`h-5 w-5 ${
           index < rating ? 'text-yellow-500 fill-yellow-500' : 'text-gray-300'
         }`}
+        aria-hidden="true"
       />
     ));
   };
@@ -75,7 +76,7 @@ export default function Testimonials() {
           </div>
         ) : testimonials.length === 0 ? (
           <div className="bg-white rounded-xl shadow-lg p-12 text-center">
-            <Quote className="h-16 w-16 text-gray-300 mx-auto mb-4" />
+            <Quote className="h-16 w-16 text-gray-300 mx-auto mb-4" aria-hidden="true" />
             <p className="text-xl text-gray-600">
               No testimonials available yet. Be the first to share your experience!
             </p>
@@ -87,7 +88,7 @@ export default function Testimonials() {
                 key={testimonial.id}
                 className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all transform hover:-translate-y-2 duration-300"
               >
-                <Quote className="h-10 w-10 text-orange-600 mb-4" />
+                <Quote className="h-10 w-10 text-orange-600 mb-4" aria-hidden="true" />
 
                 <div className="flex items-center space-x-1 mb-4">
                   {renderStars(testimonial.rating)}
