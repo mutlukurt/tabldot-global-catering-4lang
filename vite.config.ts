@@ -15,7 +15,7 @@ export default defineConfig({
     target: 'es2015',
     minify: 'terser',
     cssMinify: true,
-    cssCodeSplit: true,
+    cssCodeSplit: false,
     sourcemap: false,
     rollupOptions: {
       output: {

@@ -36,7 +36,7 @@ export default function Health() {
       <div
         className="relative py-20 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
+          backgroundImage: 'url(https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=1200&dpr=1&fm=webp)',
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
@@ -76,7 +76,7 @@ export default function Health() {
         <div
           className="mt-12 rounded-xl overflow-hidden shadow-2xl bg-cover bg-center relative"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/4259707/pexels-photo-4259707.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
+            backgroundImage: 'url(https://images.pexels.com/photos/4259707/pexels-photo-4259707.jpeg?auto=compress&cs=tinysrgb&w=1200&dpr=1&fm=webp)',
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-orange-900/95 to-orange-800/90"></div>
