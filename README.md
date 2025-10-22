@@ -210,11 +210,16 @@ Language preference is saved in localStorage and persists across sessions.
 
 ## 📊 Performance & Lighthouse Scores
 
-### Mobile Performance (PageSpeed Insights)
-- **Performance:** 96/100 ✅
-- **Accessibility:** 96/100 ✅
-- **Best Practices:** 92/100 ✅
-- **SEO:** 92/100 ✅
+### PageSpeed Insights Results
+
+| Metric | Mobile | Desktop |
+|--------|--------|---------|
+| 🚀 **Performance** | 96/100 | 100/100 |
+| ♿ **Accessibility** | 96/100 | 96/100 |
+| ✅ **Best Practices** | 92/100 | 92/100 |
+| 🔍 **SEO** | 92/100 | 92/100 |
+
+> All scores are consistently above 90, ensuring excellent user experience across all devices.
 
 ### Optimizations Applied
 - Vite for fast builds and HMR
