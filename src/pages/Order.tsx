@@ -87,7 +87,7 @@ export default function Order() {
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 md:p-10">
           {message && (
             <div
