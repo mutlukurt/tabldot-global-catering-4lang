@@ -43,7 +43,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
         }}
         aria-label="Hero section"
       >
@@ -106,7 +106,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section
         className="py-20 bg-cover bg-center relative"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'url(https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
         }}
         aria-label="Statistics section"
       >
@@ -128,7 +128,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section
         className="py-20 bg-cover bg-center relative"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'url(https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1920&dpr=1)',
         }}
         aria-label="About section"
       >
