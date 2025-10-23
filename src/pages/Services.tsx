@@ -9,25 +9,25 @@ export default function Services() {
       icon: Briefcase,
       title: t.services.corporate.title,
       description: t.services.corporate.description,
-      image: 'https://images.pexels.com/photos/3184192/pexels-photo-3184192.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp',
+      image: '/images/corporate.webp',
     },
     {
       icon: PartyPopper,
       title: t.services.events.title,
       description: t.services.events.description,
-      image: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp',
+      image: '/images/events.webp',
     },
     {
       icon: Calendar,
       title: t.services.daily.title,
       description: t.services.daily.description,
-      image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp',
+      image: '/images/food2.webp',
     },
     {
       icon: Utensils,
       title: t.services.special.title,
       description: t.services.special.description,
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp',
+      image: '/images/food1.webp',
     },
   ];
 

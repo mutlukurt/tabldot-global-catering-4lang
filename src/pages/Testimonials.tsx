@@ -55,7 +55,7 @@ export default function Testimonials() {
       <div
         className="relative py-20 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200&dpr=1&fm=webp)',
+          backgroundImage: 'url(/images/testimonials-bg.webp)',
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>

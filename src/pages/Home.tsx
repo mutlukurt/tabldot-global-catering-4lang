@@ -44,23 +44,16 @@ export default function Home({ onNavigate }: HomeProps) {
         className="relative h-screen flex items-center justify-center bg-gray-900"
         aria-label="Hero section"
       >
-        <picture>
-          <source
-            type="image/webp"
-            srcSet="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1&fm=webp 640w, https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp 800w"
-            sizes="100vw"
-          />
-          <img
-            src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=640&dpr=1"
-            alt="Premium catering service with elegant food presentation"
-            width="1920"
-            height="1280"
-            className="absolute inset-0 w-full h-full object-cover"
-            fetchPriority="high"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
+        <img
+          src="/images/hero.webp"
+          alt="Premium catering service with elegant food presentation"
+          width="1920"
+          height="1280"
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" style={{ contain: 'layout style paint' }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ contain: 'layout' }}>
@@ -121,20 +114,14 @@ export default function Home({ onNavigate }: HomeProps) {
         className="py-20 relative bg-orange-900"
         aria-label="Statistics section"
       >
-        <picture>
-          <source
-            type="image/webp"
-            srcSet="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp"
-          />
-          <img
-            src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
-            alt="Catering service statistics background with food display"
-            width="1200"
-            height="600"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="lazy"
-          />
-        </picture>
+        <img
+          src="/images/food1.webp"
+          alt="Catering service statistics background with food display"
+          width="1200"
+          height="600"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-orange-900/90"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -154,20 +141,14 @@ export default function Home({ onNavigate }: HomeProps) {
         className="py-20 relative bg-gray-900"
         aria-label="About section"
       >
-        <picture>
-          <source
-            type="image/webp"
-            srcSet="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1&fm=webp"
-          />
-          <img
-            src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
-            alt="About Tabldot catering service with professional kitchen"
-            width="1200"
-            height="600"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="lazy"
-          />
-        </picture>
+        <img
+          src="/images/food2.webp"
+          alt="About Tabldot catering service with professional kitchen"
+          width="1200"
+          height="600"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">

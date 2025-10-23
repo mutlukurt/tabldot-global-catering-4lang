@@ -73,7 +73,7 @@ export default function Order() {
       <div
         className="relative py-20 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200&dpr=1&fm=webp)',
+          backgroundImage: 'url(/images/about-bg.webp)',
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
