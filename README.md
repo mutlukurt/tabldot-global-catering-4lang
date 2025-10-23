@@ -1,6 +1,11 @@
 # Tabldot - Premium Catering Website
 
-🌐 **Live Demo:** [https://global-catering-web-bql0.bolt.host/](https://global-catering-web-bql0.bolt.host/)
+<div align="center">
+
+  [![Live Demo](https://img.shields.io/badge/Live-Demo-orange?style=for-the-badge&logo=google-chrome&logoColor=white)](https://global-catering-web-bql0.bolt.host/)
+  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+</div>
 
 A professional, multi-language catering website built with modern web technologies. Features responsive design, database integration, and support for 4 languages (English, Chinese, Russian, Turkish).
 
